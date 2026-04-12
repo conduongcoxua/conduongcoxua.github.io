@@ -4,16 +4,14 @@
     <meta charset="UTF-8">
     <title>Con Đường Cổ Xưa</title>
     <style>
-        /* Tạo màu nền và font chữ giống trang Budsas */
         body {
-            background-color: #ffffcc; /* Màu vàng nhạt đặc trưng */
-            color: #000066; /* Chữ màu xanh đậm */
+            background-color: #ffffcc;
+            color: #000066;
             font-family: "Times New Roman", Times, serif;
             line-height: 1.5;
             margin: 20px;
         }
         
-        /* Cấu trúc bảng chia cột */
         .container {
             width: 95%;
             margin: auto;
@@ -22,42 +20,47 @@
             padding: 20px;
         }
 
-        h1 { text-align: center; color: #990000; }
+        h1 { text-align: center; color: #990000; margin-bottom: 10px; }
         
         .menu {
             text-align: center;
             border-bottom: 2px solid #990000;
             padding-bottom: 10px;
             margin-bottom: 20px;
-        }
-
-        .menu a {
-            text-decoration: none;
-            font-weight: bold;
             color: #990000;
-            margin: 0 10px;
+            font-weight: bold;
         }
 
-        .menu a:hover { text-decoration: underline; }
+        .menu-item { margin: 0 10px; cursor: default; }
 
-        .content { font-size: 1.1em; }
+        .content-intro { 
+            font-size: 1.1em; 
+            text-align: center; 
+            margin-bottom: 30px; 
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 15px;
+        }
 
-        /* Tạo hàng chứa các cột */
+        /* Flexbox chia cột */
         .row {
             display: flex;
-            flex-wrap: wrap; /* Tự động xuống dòng nếu màn hình điện thoại quá nhỏ */
-            gap: 20px; /* Khoảng cách giữa 2 cột */
-            margin-top: 20px;
+            flex-wrap: wrap; 
+            gap: 20px;
+            align-items: flex-start; /* Giúp các cột bắt đầu từ đỉnh bằng nhau */
         }
 
-        /* Định dạng từng cột */
         .column {
-            flex: 1; /* Chia đều không gian cho các cột */
-            min-width: 300px; /* Đảm bảo cột không bị quá hẹp */
-            border: 1px dashed #999900; /* Đường viền nhẹ để phân biệt */
+            flex: 1;
+            min-width: 320px; /* Tăng nhẹ để tránh quá hẹp trên màn hình nhỏ */
+            border: 1px dashed #999900;
             padding: 15px;
             background-color: #fffdf5;
         }
+
+        h2 { color: #990000; font-size: 1.3em; border-bottom: 1px solid #eee; }
+        
+        ul { padding-left: 20px; }
+        li { margin-bottom: 5px; }
         
         .footer {
             margin-top: 30px;
@@ -74,49 +77,42 @@
     <h1>CON ĐƯỜNG CỔ XƯA</h1>
     
     <div class="menu">
-        <span class="menu-item">Trang Chủ</span>
-        <span class="menu-item">Kinh Tạng
-        
-        </span>
-        <span class="menu-item">Luận Tạng</span>
+        <span class="menu-item">Trang Chủ</span> |
+        <span class="menu-item">Kinh Tạng</span> |
+        <span class="menu-item">Luận Tạng</span> |
         <span class="menu-item">Lịch Sử</span>
     </div>
-    
-<div class="row">
-    <div class="column">
-        <h2>Kinh Tạng (Sutta Pitaka)</h2>
-        <p>Kinh Tạng là tập hợp các bài giảng của Đức Phật trong suốt 45 năm hoằng pháp. Nội dung chia làm 5 bộ chính (Nikaya):</p>
-        <ul>
-            <li><b>Trường Bộ Kinh:</b> Các bài kinh dài.</li>
-            <li><b>Trung Bộ Kinh:</b> Các bài kinh trung bình.</li>
-            <li><b>Tương Ưng Bộ Kinh:</b> Theo chủ đề.</li>
-            <li><b>Tăng Chi Bộ Kinh:</b> Theo pháp số.</li>
-            <li><b>Tiểu Bộ Kinh:</b> Các tập kinh ngắn.</li>
-        </ul>
-    </div>
 
-    <div class="column">
-        <h2>Luận Tạng (Abhidhamma)</h2>
-        <p>Luận Tạng (Vi Diệu Pháp) hệ thống hóa các giáo lý về tâm lý, triết học và bản thể học một cách chi tiết:</p>
-        <ul>
-            <li><b>Bộ Pháp Tụ (Dhammasangani):</b> Phân loại các pháp.</li>
-            <li><b>Bộ Phân Tích (Vibhanga):</b> Giảng giải chi tiết các uẩn, xứ, giới.</li>
-            <li><b>Bộ Giới Thuyết (Dhatukatha):</b> Thảo luận về các yếu tố cấu thành.</li>
-            <li><b>Bộ Nhân Chế Định (Puggalapannatti):</b> Phân loại các hạng người.</li>
-            <li><b>Bộ Ngữ Tông (Kathavatthu):</b> Thảo luận về các quan điểm bộ phái.</li>
-            <li><b>Bộ Song Đối (Yamaka) & Bộ Vị Trí (Patthana):</b> Các quy luật nhân duyên.</li>
-        </ul>
-    </div>
-</div>
-    
-    <div class="content">
-        <p align="center"><b>Chào mừng bạn đến với kho lưu trữ tài liệu Phật giáo.</b></p>
+    <div class="content-intro">
+        <p><b>Chào mừng bạn đến với kho lưu trữ tài liệu Phật giáo.</b></p>
         <p>Đây là nơi lưu trữ các bài viết, kinh sách về lời dạy của Đức Thế Tôn...</p>
-        
-        <ul>
-            <li><a href="#">Bài viết mới nhất 1</a></li>
-            <li><a href="#">Bài viết mới nhất 2</a></li>
-        </ul>
+    </div>
+    
+    <div class="row">
+        <div class="column">
+            <h2>Kinh Tạng (Sutta Pitaka)</h2>
+            <p>Kinh Tạng là tập hợp các bài giảng của Đức Phật trong suốt 45 năm hoằng pháp. Nội dung chia làm 5 bộ chính (Nikaya):</p>
+            <ul>
+                <li><b>Trường Bộ Kinh:</b> Các bài kinh dài.</li>
+                <li><b>Trung Bộ Kinh:</b> Các bài kinh trung bình.</li>
+                <li><b>Tương Ưng Bộ Kinh:</b> Theo chủ đề.</li>
+                <li><b>Tăng Chi Bộ Kinh:</b> Theo pháp số.</li>
+                <li><b>Tiểu Bộ Kinh:</b> Các tập kinh ngắn.</li>
+            </ul>
+        </div>
+
+        <div class="column">
+            <h2>Luận Tạng (Abhidhamma)</h2>
+            <p>Luận Tạng (Vi Diệu Pháp) hệ thống hóa các giáo lý về tâm lý, triết học và bản thể học một cách chi tiết:</p>
+            <ul>
+                <li><b>Bộ Pháp Tụ:</b> Phân loại các pháp.</li>
+                <li><b>Bộ Phân Tích:</b> Giảng giải chi tiết uẩn, xứ, giới.</li>
+                <li><b>Bộ Giới Thuyết:</b> Thảo luận về yếu tố cấu thành.</li>
+                <li><b>Bộ Nhân Chế Định:</b> Phân loại các hạng người.</li>
+                <li><b>Bộ Ngữ Tông:</b> Thảo luận về các quan điểm.</li>
+                <li><b>Bộ Song Đối & Bộ Vị Trí:</b> Các quy luật nhân duyên.</li>
+            </ul>
+        </div>
     </div>
 
     <div class="footer">
