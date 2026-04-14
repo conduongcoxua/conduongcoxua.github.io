@@ -6,53 +6,43 @@
     <title>Học Ngữ Pháp Tiếng Myanmar</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ffffcc;
+            color: #000066;
+            font-family: "Times New Roman", Times, serif;
             line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f4f7f6;
+            margin: 20px;
+            font-size: 20px;  /* Đặt cỡ chữ chung lớn hơn (mặc định là 16px) */
         }
         .container {
-            background: white;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            width: 90%;
+            max-width: 800px; /* Thu hẹp lại một chút để đọc văn bản dài không bị mỏi mắt */
+            margin: auto;
+            border: 1px solid #999900;
+            background-color: #ffffff;
+            padding: 40px;
         }
-        h2 {
-            color: #2c3e50;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 10px;
-        }
-        .grammar-box {
-            background-color: #e8f4fd;
-            padding: 15px;
-            border-left: 5px solid #3498db;
-            margin: 20px 0;
-        }
-        .example-list {
-            list-style: none;
-            padding-left: 0;
-        }
-        .example-item {
-            display: flex;
-            padding: 8px 0;
-            border-bottom: 1px dashed #eee;
-        }
-        .myanmar {
-            font-weight: bold;
-            color: #d35400;
-            min-width: 150px;
-            font-size: 1.1em;
-        }
-        .translation {
-            color: #7f8c8d;
-        }
-        .note {
+        .navigation {
+            margin-bottom: 20px;
             font-style: italic;
-            color: #e67e22;
-            margin-top: 10px;
+        }
+        .navigation a {
+            color: #990000;
+            text-decoration: none;
+        }
+        .navigation a:hover { text-decoration: underline; }
+        
+        h1 { color: #990000; text-align: center; font-size: 1.5em; }
+        .translator { text-align: center; margin-bottom: 30px; font-weight: bold; }
+        
+        .sutta-content {
+            text-align: justify; /* Căn lề hai bên cho giống sách in */
+        }
+        .footer {
+            margin-top: 50px;
+            text-align: center;
+            border-top: 1px double #990000;
+            padding-top: 20px;
+            font-size: 0.9em;
         }
     </style>
 </head>
