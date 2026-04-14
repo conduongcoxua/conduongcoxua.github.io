@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Học Ngữ Pháp Tiếng Myanmar</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f7f6;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .grammar-box {
+            background-color: #e8f4fd;
+            padding: 15px;
+            border-left: 5px solid #3498db;
+            margin: 20px 0;
+        }
+        .example-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        .example-item {
+            display: flex;
+            padding: 8px 0;
+            border-bottom: 1px dashed #eee;
+        }
+        .myanmar {
+            font-weight: bold;
+            color: #d35400;
+            min-width: 150px;
+            font-size: 1.1em;
+        }
+        .translation {
+            color: #7f8c8d;
+        }
+        .note {
+            font-style: italic;
+            color: #e67e22;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Ngữ pháp Tiếng Myanmar cơ bản</h1>
+
+    <!-- Phần 1: Câu khẳng định -->
+    <section>
+        <h2>1. Động từ/tính từ + တယ်။</h2>
+        <div class="grammar-box">
+            Thể hiện sự đồng ý hoặc xác định một điều gì đó là đúng đắn, hợp lý ở hiện tại hoặc quá khứ.
+        </div>
+        <div class="example-list">
+            <div class="example-item">
+                <span class="myanmar">ပူတယ်။</span>
+                <span class="translation">// Nóng.</span>
+            </div>
+            <div class="example-item">
+                <span class="myanmar">ရေ ရှိတယ်။</span>
+                <span class="translation">// Có nước.</span>
+            </div>
+            <div class="example-item">
+                <span class="myanmar">နေကောင်းတယ်။</span>
+                <span class="translation">// Khỏe.</span>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- Phần 2: Câu nghi vấn -->
+    <section>
+        <h2>2. Động từ/tính từ + လား။</h2>
+        <p>Cấu trúc: <strong>"Động từ/tính từ + không?"</strong></p>
+        
+        <div class="example-list">
+            <div class="example-item">
+                <span class="myanmar">ပူလား။</span>
+                <span class="translation">// Nóng không?</span>
+            </div>
+            <div class="example-item">
+                <span class="myanmar">ပူတယ်။</span>
+                <span class="translation">// Nóng.</span>
+            </div>
+            <div class="example-item">
+                <span class="myanmar">ဟုတ်လား။</span>
+                <span class="translation">// Phải không?</span>
+            </div>
+            <div class="example-item">
+                <span class="myanmar">ဟုတ်တယ်။</span>
+                <span class="translation">// Phải.</span>
+            </div>
+            <div class="example-item">
+                <span class="myanmar">ရေ ရှိလား။</span>
+                <span class="translation">// Có nước không?</span>
+            </div>
+            <div class="example-item">
+                <span class="myanmar">ရှိတယ်။</span>
+                <span class="translation">// Có.</span>
+            </div>
+            <div class="example-item">
+                <span class="myanmar">နေကောင်းလား။</span>
+                <span class="translation">// Khỏe không?</span>
+            </div>
+            <div class="example-item">
+                <span class="myanmar">နေကောင်းတယ်။</span>
+                <span class="translation">// Khỏe.</span>
+            </div>
+        </div>
+        
+        <p class="note">* Lưu ý: "သလား" cũng được sử dụng giống như "လား".</p>
+    </section>
+</div>
+
+</body>
+</html>
