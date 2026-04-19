@@ -36,6 +36,26 @@
         
         .sutta-content {
             text-align: justify; /* Căn lề hai bên cho giống sách in */
+
+        /* Định nghĩa màu sắc cho từng loại từ */
+        .danh-tu {
+            color: #2ecc71; /* Màu xanh lá */
+            font-weight: bold;
+        }
+
+        .dong-tu {
+            color: #e74c3c; /* Màu đỏ */
+            font-style: italic;
+        }
+
+        .tinh-tu {
+            color: #3498db; /* Màu xanh dương */
+        }
+
+        .trang-tu {
+            color: #f39c12; /* Màu cam */
+        }
+
         }
         .footer {
             margin-top: 50px;
@@ -59,24 +79,26 @@
 
     <!-- Phần 1: Câu khẳng định -->
     <section>
-        <h2>1. Động từ/tính từ + တယ်။</h2>
-        <div class="grammar-box">
-            Thể hiện sự đồng ý hoặc xác định một điều gì đó là đúng đắn, hợp lý ở hiện tại hoặc quá khứ.
-        </div>
-        <div class="example-list">
-            <div class="example-item">
-                <span class="myanmar">ပူတယ်။</span>
-                <span class="translation">// Nóng.</span>
-            </div>
-            <div class="example-item">
-                <span class="myanmar">ရေ ရှိတယ်။</span>
-                <span class="translation">// Có nước.</span>
-            </div>
-            <div class="example-item">
-                <span class="myanmar">နေကောင်းတယ်။</span>
-                <span class="translation">// Khỏe.</span>
-            </div>
-        </div>
+        <h3>1. Động từ/tính từ + တယ်။</h3>
+            <p>Thể hiện sự đồng ý hoặc xác định một điều gì đó là đúng đắn, hợp lý ở hiện tại hoặc quá khứ.</p>
+            <ul>
+                <li>
+                    <span class="tinh-tu">ပူ။</span>
+                    <span class="dong-tu">တယ်။</span>
+                    <span class="translation">// Nóng.</span>
+                </li>
+                <li>
+                    <span class="danh-tu">ရေ</span>
+                    <span class="dong-tu">ရှိ။</span>
+                    <span class="tro-tu">တယ်။</span>
+                    <span class="translation">// Có nước.</span>
+                </li>
+                <li>
+                    <span class="trang-tu">နေကောင်းတယ်။</span>
+                    <span class="translation">// Khỏe.</span>
+                </li>
+            </ul> 
+
     </section>
 
     <hr>
